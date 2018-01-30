@@ -18,13 +18,15 @@ This artefact was successfully tested for the following versions:
 
 - Configure the OAuth-Client-Application as registered in the Azure Active Directory
 
+- Open the imported Policy: MS Azure Authorize Callback and adjust the filter: Verify ID Token to you AD-Tenant-ID
+
 - Setup the policy: "MS Dynamics CRM API-Mgr Routing" as to be a routing policy for API-Manager
 
-More information to come!
+- You may use the file: Src/ms_dynamics_crm_sample_api.dat and import it as an API-Collection into API-Manager for testing purposes
 
 ## Usage
 ```
-To test that API, you can basically call the Dynamics-CRM OData Web-API. For instance like this:
+When you have imported the API into API-Manager you can test that API, by basically calling the Dynamics-CRM OData Web-API. For instance like this:
 https://<you-api-mgt-host>:8065/api/data/v9.0/accounts?$filter=accountnumber eq 'ABSS4G45'
 ```
   
