@@ -18,6 +18,8 @@ This artefact was successfully tested for the following versions:
 
 - Configure the OAuth-Client-Application as registered in the Azure Active Directory
 
+- make sure you adjust the configuration of the imported Azure AD provider settings (Token & AuthZ-Endpoint)
+
 - Open the imported Policy: MS Azure Authorize Callback and adjust the filter: Verify ID Token to you AD-Tenant-ID
 
 - Setup the policy: "MS Dynamics CRM API-Mgr Routing" as to be a routing policy for API-Manager
